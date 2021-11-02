@@ -55,7 +55,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-// let year = "1999";
+let year = "1999";
+year = 1999;
+console.log(year);
 
 
 
@@ -68,9 +70,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(parameter1, parameter2){
+return parameter1 * parameter2;
 }
+console.log(multiply(2,4));
 
 
 
@@ -84,9 +87,11 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+let dogYears = 7*age;
+console.log("your dog is " + dogYears + " years old in dog years")
 }
+dogYears(2);
 
 
 
@@ -156,11 +161,34 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let computer = Math.floor(Math.random() * 3);
 
-function game(user, computer){
-  /*add your code here*/
+if (computer === 0){
+  computer = "paper";
+} else if (computer === 1){
+  computer = "rock";
+} else if (computer === 2){
+  computer = "scissors";
 }
+  
 
+  
+ function game(user, computer){
+   if (user === computer) {
+     return "It's a tie";
+   } 
+   if (user === "rock" && computer === "scissors"){
+     return "you win!";
+   }
+   if (user === "scissors" && computer === "paper"){
+    return "you win!";
+   }
+   if (user === "paper" && computer === "rock"){
+     return "you win!";
+ } else {
+   return "you lose!"
+ }
+};
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
