@@ -238,7 +238,7 @@ Using the annoyingSong function below do the following:
 function annoyingSong(){
   let bottles;
   let bottlesLeft;
-  for (i = 99; i >= 1; i--){
+  for (let i = 99; i >= 1; i--){
     if (i === 1){
       bottles = 'bottle';
       bottlesLeft = "no bottles of soda on the wall!";
@@ -268,8 +268,18 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(){
+if (grade >= 90 && grade <= 100){
+  return "you got an A";
+} else if (grade >= 80 && grade <= 89){
+  return "you got a B";
+} else if (grade >= 70 && grade <= 79){
+  return "you got a c";
+} else if (grade >= 60 && grade <= 69){
+  return "you got a D";
+} else {
+  return "you got an F"
+}
 }
 
 
