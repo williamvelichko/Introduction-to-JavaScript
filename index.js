@@ -19,6 +19,10 @@ Do the following:
 
    HINT: no function required
 */
+const votingAge = 19 ;
+if (votingAge >= 18){
+} console.log(true);
+
 
 
 
@@ -32,6 +36,10 @@ Do the following:
 
    HINT: no function required
 */
+let sister = "emily";
+sister = "katy";
+let cousin  = "katy";
+console.log(sister);
 
 
 
@@ -47,7 +55,7 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+// let year = "1999";
 
 
 
